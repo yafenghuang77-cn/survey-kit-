@@ -6,5 +6,11 @@ export default {
     stats: true
   },
   mini: {},
-  h5: {}
+  h5: {
+    router: {
+      mode: "hash",
+      basename: "/survey-kit",
+      customRoutes: { "/pages/index/index": "/index" },
+    },
+  },
 } satisfies UserConfigExport<'webpack5'>
